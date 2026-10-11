@@ -6,4 +6,4 @@ A responsive portfolio showcasing my background, areas of interest, and projects
 
 https://tusharbbadgujar.github.io/Personal-Portfolio/
 
-The site is deployed from the `Personal` branch with GitHub Actions and GitHub Pages.
+The site is published directly from the root of the `Personal` branch with GitHub Pages.
