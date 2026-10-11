@@ -2,7 +2,7 @@ export function Navbar() {
   return `
     <header>
       <nav aria-label="Main navigation">
-        <a class="brand" href="#top" aria-label="Tushar B Badgujar home">T<span>.</span></a>
+        <a class="brand" href="#top" aria-label="Tushar B Badgujar home">Home</a>
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
