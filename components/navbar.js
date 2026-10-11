@@ -1,10 +1,13 @@
 export function Navbar() {
   return `
     <header>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <nav aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Tushar B Badgujar home">T<span>.</span></a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
       </nav>
     </header>
   `;
