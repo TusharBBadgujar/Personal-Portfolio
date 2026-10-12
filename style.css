@@ -333,6 +333,188 @@ footer a:hover {
   transform: translate(3px, -3px);
 }
 
+.feedback-section {
+  padding-top: 80px;
+}
+
+.feedback-board {
+  display: grid;
+  grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+  margin-top: 28px;
+}
+
+.feedback-form,
+.feedback-card {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(22px, 4vw, 30px);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgb(21 31 50 / 92%), rgb(14 20 34 / 88%));
+}
+
+.feedback-form::before,
+.feedback-card::before {
+  position: absolute;
+  top: -80px;
+  right: -70px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgb(131 240 210 / 8%);
+  content: "";
+  filter: blur(4px);
+}
+
+.feedback-form-header {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.feedback-form-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: -0.03em;
+}
+
+.feedback-form-header p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.feedback-fields {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.feedback-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #edf3ff;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.feedback-fields input,
+.feedback-fields textarea,
+.feedback-fields select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgb(9 13 24 / 82%);
+  color: var(--text);
+  font: inherit;
+}
+
+.feedback-fields textarea {
+  resize: vertical;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.feedback-form .btn {
+  margin-top: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback-list {
+  position: relative;
+  display: grid;
+  gap: 18px;
+}
+
+.feedback-card {
+  min-height: 220px;
+}
+
+.feedback-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.feedback-avatar {
+  width: 68px;
+  height: 68px;
+  border: 2px solid rgb(131 240 210 / 35%);
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--surface-raised);
+}
+
+.feedback-meta {
+  position: relative;
+}
+
+.feedback-role {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.feedback-meta h3 {
+  margin: 6px 0 0;
+  font-size: 1.2rem;
+  letter-spacing: -0.03em;
+}
+
+.feedback-stars {
+  position: relative;
+  margin: 14px 0 12px;
+  color: #ffd76a;
+  font-size: 1.04rem;
+  letter-spacing: 0.18em;
+}
+
+.feedback-section-copy {
+  position: relative;
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.feedback-section-copy strong {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.feedback-section-copy p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.feedback-badges {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.feedback-badges span {
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 4%);
+  color: #dfe9ff;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
 .contact-section {
   padding-top: 60px;
   padding-bottom: 110px;
@@ -412,7 +594,9 @@ footer div {
     padding: 68px 0;
   }
 
-  .projects {
+  .projects,
+  .feedback-board,
+  .feedback-fields {
     grid-template-columns: 1fr;
   }
 

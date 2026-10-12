@@ -6,6 +6,7 @@ export function Navbar() {
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
+          <a href="#feedback">Feedback</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
